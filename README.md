@@ -58,6 +58,37 @@ un tableau 2D.
 Le tableau créé est de taille size x size
 Chaque cellule vaut 0 si elle n’est pas sur la diagonale et 1 si elle est sur la diagonale.__
 
+void setup() {
+
+  print2D();
+}
+int[][] diagonal(int size) {
+  int[][] array = new int[size][size];
+  for (int n = 0; n<array.length; n++) {
+    array[n][n]=1;
+  }
+  return array;
+}
+
+
+
+
+void print2D() {
+
+  int[][] array=diagonal(4);
+  
+
+  for (int i=0; i<array.length; i++) {
+  
+    print('\n');
+    
+    for (int y=0; y<array.length; y++) {
+
+      print(array[i][y]);
+    }
+  }
+}
+
 
 
 
