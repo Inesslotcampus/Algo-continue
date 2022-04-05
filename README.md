@@ -10,11 +10,14 @@ Mon code:
 int[] tab = {0, 1};
 
 void setup(){
+
   print1D(tab); 
 }
 
 void print1D(int tab[]){
+
   for (int i=0; i < tab.length ; i ++){
+  
     println(tab[i]);
 
 }
@@ -31,13 +34,18 @@ Mon code:
 int[][] tab = { {0, 1}, {2, 3 } };
 
 void setup() {
+
   print2D(tab);
 }
 
 void print2D(int[][] tab) {
+
   for (int stab [] : tab) {
+  
     println('\n');
+    
     for (int numb : stab) {
+    
       print(numb);
     }
   }
