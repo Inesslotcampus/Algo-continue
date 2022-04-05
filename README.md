@@ -89,6 +89,9 @@ void print2D() {
   }
 }
 
+## 4.Initialiser un tableau 2D triangulaire 
+
+
 
 
 
