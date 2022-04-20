@@ -135,5 +135,55 @@ void print2D() {
 }
 
 
+## 5. Initialiser un tableau 2D super diagonal 
+
+void setup() {
+
+print2D(); } int[][] super_diagonal(int size) {
+
+int[][] array = new int[size][size];
+
+for (int n = 0; n<array.length; n++) {
+
+for (int m = 0; m<array.length; m++) {
+  
+  if (n>=m) {
+  
+  int i= n-m;
+  
+    array[m][n]=i;
+  }else{
+  
+    int j= m-n;
+    
+    array[m][n]=j;
+    
+  }
+  
+}
+}
+
+return array;
+
+}
+
+
+void print2D() {
+
+int[][] array=super_diagonal(4);
+
+for (int i=0; i<array.length; i++) {
+
+print('\n');
+
+for (int y=0; y<array.length; y++) {
+
+  print(array[i][y]);
+}
+
+}
+
+}
+
 
 
