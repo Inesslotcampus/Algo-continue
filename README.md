@@ -91,7 +91,48 @@ void print2D() {
 
 ## 4.Initialiser un tableau 2D triangulaire 
 
+void setup() {
 
+  print2D();
+}
+int[][] triangle(int size) {
+
+  int[][] array = new int[size][size];
+  
+  for (int n = 0; n<array.length; n++) {
+  
+    for (int m = 0; m<array.length; m++) {
+      
+      if (n>=m) {
+      
+        array[m][n]=1;
+      }
+      
+    }
+    
+  }
+  
+  return array;
+  
+}
+
+
+void print2D() {
+
+  int[][] array=triangle(4);
+
+  for (int i=0; i<array.length; i++) {
+
+    print('\n');
+
+    for (int y=0; y<array.length; y++) {
+
+      print(array[i][y]);
+    }
+    
+  }
+  
+}
 
 
 
